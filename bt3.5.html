@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt3.5</title>
+</head>
+
+<body>
+    <script>
+        let a = 1;
+        let b = 1;
+        let sum = a + b;
+        let c;
+        let i = 0;
+        while (i < 18) {
+            c = a + b;
+            sum += c;
+            a = b;
+            b = c;
+            i++;
+        }
+        console.log(sum);
+
+    </script>
+</body>
+
+</html>

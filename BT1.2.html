@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1.2</title>
+</head>
+
+<body>
+    <script>
+        let doc = null;
+        while (doc < 20 || doc > 100) {
+            doc = prompt("Nhập nhiệt độ hiện tại (độ C)");
+            doc = Number(doc);
+            if (!isNaN(doc)) {
+                if (doc > 100) {
+                    alert("Nhiệt độ quá cao, vui lòng giảm nhiệt độ");
+                }
+                else if (doc < 20) {
+                    alert("Nhiệt độ quá thấp, vui lòng tăng nhiệt độ");
+                }
+                else {
+                    alert("Nhiệt độ bình thường");
+                    break;
+                }
+            }
+            else {
+                alert("Giá trị nhập vào không hợp lệ");
+                break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

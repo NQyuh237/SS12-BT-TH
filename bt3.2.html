@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt3.2</title>
+</head>
+
+<body>
+    <script>
+        function isPrime(n) {
+            if (n < 2) {
+                return false;
+            }
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        let N = +prompt("Nhập vào số N");
+        if (N > 0) {
+            console.log("N số nguyên tố theo thứ tự tăng dần là:");
+            let count = 0;
+            let n = 2;
+            while (count < N) {
+                if (isPrime(n)) {
+                    console.log(n);
+                    count++;
+                }
+                n++;
+            }
+        }
+        else {
+            console.log("Số nhập vào không hợp lệ");
+        }
+    </script>
+</body>
+
+</html>

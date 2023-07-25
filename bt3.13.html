@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt3.11</title>
+</head>
+
+<body>
+    <script>
+        let N = +prompt("Nhập vào số N");
+        if (N > 0) {
+            console.log("Các ước của " + N + " là:");
+            let i = 1;
+            while (i <= N) {
+                if (N % i == 0) {
+                    console.log(i);
+                }
+                i++;
+            }
+        }
+        else {
+            console.log("Số nhập vào không hợp lệ");
+        }
+
+    </script>
+</body>
+
+</html>
